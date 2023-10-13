@@ -29,6 +29,15 @@ function () {
         productlist.appendChild(productElement);
 
     }); 
-}
-)
+    const scrollToProductsLink = document.getElementById("scrollToProducts");
+    const featuredProducts = document.getElementById("featuredProducts");
+
+    scrollToProductsLink.addEventListener("click",
+    function (event) {
+        event.preventDefault();
+
+        featuredProducts.scrollIntoView({ behavior:"smooth"});
+
+    });
+});
     
